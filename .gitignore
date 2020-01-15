@@ -1,0 +1,5 @@
+/.idea
+/__pycache__
+/database
+api_token.txt
+chat_id.txt
