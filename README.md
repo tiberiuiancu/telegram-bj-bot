@@ -46,4 +46,4 @@ In other words:
 ```
 max_expected_value(game_state) = max( expected_value(stand, game_state), max_expected_value(game_state.draw_card()) )
 ```
-The obviuos problem with doing it recursively is that there are millions of possible states, but in reality we only care about the sum of the cards (20 possible states: 2 to 21) and if the dealer has an ace (2 possible states: true or false). Therefore we only have to worry about a maximum of 40 states that we can cache and use later in recursion. 
+Doing it recursively means that there are millions of possible states, but in reality we only care about the sum of the cards (20 possible states: 2 to 21) and if the dealer has an ace (2 possible states: true or false). Therefore we only have to worry about a maximum of 40 states that we can cache and use later in recursion. 
