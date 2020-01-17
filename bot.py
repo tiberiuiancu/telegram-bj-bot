@@ -7,8 +7,11 @@ import json
 from dealer import get_best_move
 import pickle
 
-with open('chat_id.txt', 'r') as f:
-    chat_id = int(f.readline().strip())
+try:
+    with open('chat_id.txt', 'r') as f:
+        chat_id = int(f.readline().strip())
+except:
+    chat_id = None
 
 game_obj = Game()
 INITIAL_MONEY = 10000

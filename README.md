@@ -19,7 +19,8 @@ pip install requests numpy
 First [create a new bot](https://core.telegram.org/bots#6-botfather) and copy the api token that botfather gave you. <br /><br />
 Once you clone the repository, you will have to create 2 files in the main folder: <br />
 **api_token.txt**: in here paste the api token that botfather gave you when you created the bot.<br />
-**chat_id.txt**: in here place the chat id in which your bot will run.<br />
+**OPTIONAL: chat_id.txt**: in here place the chat id in which your bot will run.<br />
+NOTE: if you do not provide a chat id, the bot will listen on all groups and private chats for the /start command.<br />
 
 #### How to get a chat's id
 1. If the chat is a group, add the bot to the group and make it admin. Also disable the privacy mode of the bot (this might not be needed but I haven't tested with privacy mode enabled). Send a message in that group.<br /><br />
@@ -34,6 +35,8 @@ Now that all that is done, simply run bot.py:
 ```
 python3 bot.py
 ```
+<br />
+Now to run the bot just type /start in the chat.<br />
 
 #### Dealer algorithm
 Given the bets of all players and their cards, the dealer computes the expecteed outcome of hit and stand:<br />
